@@ -55,6 +55,12 @@ export default function AcceptedPage() {
                     <br />
                     my favorite story.
                 </p>
+
+                <p className="text-lg text-gray-800 leading-relaxed">
+                    Ramita I promisee to alwayss keep youu happy
+                    <br />
+                    I ll neverr let even a shred of tear drop from your eyes
+                </p>
             </motion.div>
         </div>
     )

@@ -19,16 +19,17 @@ export default function PhotoReveal({ img, text }: { img: string, text: string }
                 style={{ rotate: rotation }}
                 whileHover={{ scale: 1.05, rotate: 0 }}
                 className="
-          bg-white
-          aspect-square
-          rounded-2xl
-          shadow-xl
-          cursor-pointer
-          flex
-          items-center
-          justify-center
-          p-2
-        "
+                bg-white
+                aspect-square
+                rounded-2xl
+                shadow-xl
+                cursor-pointer
+                flex
+                items-center
+                w-full
+                justify-center
+                p-2
+                "
                 onClick={() => setOpen(true)}
             >
                 <img
@@ -70,9 +71,7 @@ export default function PhotoReveal({ img, text }: { img: string, text: string }
               "
                             onClick={(e) => e.stopPropagation()}
                         >
-                            <p className="text-lg leading-relaxed">
-                                {text}
-                            </p>
+                            <img src={text}></img>
                         </motion.div>
                     </motion.div>
                 )}

@@ -11,13 +11,11 @@ export default function LetterPage() {
   const [open, setOpen] = useState<boolean>(false)
 
   return (
-    <main className="h-screen flex flex-col p-10 items-center">
+    <main className="min-h-screen min-h-[100svh] flex flex-col p-10 items-center">
 
       {/* LEFT LETTER */}
       {/* LEFT — LETTER CARD */}
-      <div
-        className="flex flex-row w-full gap-10 flex-1"
-      >
+      <div className="flex flex-row w-full gap-10 flex-1 min-h-0">
         <div
           className="
                     bg-white
@@ -30,6 +28,7 @@ export default function LetterPage() {
                     max-w-xl
                     space-y-6
                     flex-1
+                    min-h-0
                 "
           onClick={() => setOpen(true)}
 
@@ -91,13 +90,13 @@ export default function LetterPage() {
 
 
         {/* RIGHT PHOTOS */}
-        <div className="flex-1 flex justify-enter align-center w-full h-full">
-          <div className="flex flex-col w-full h-full gap-10">
-            <div className="flex-row flex gap-10 h-full flex-1">
+        <div className="flex-1 flex justify-center items-center w-full h-full min-h-0 min-w-0">
+          <div className="flex flex-col w-full h-full gap-10 min-h-0 min-w-0">
+            <div className="flex-row flex gap-10 h-full flex-1 min-h-0 min-w-0">
               <PhotoReveal img="/letter/1.jpg" text="/handwritten/4.jpg" />
               <PhotoReveal img="/letter/2.jpg" text="/handwritten/3.jpg" />
             </div>
-            <div className="flex flex-row gap-10 h-full flex-1">
+            <div className="flex flex-row gap-10 h-full flex-1 min-h-0 min-w-0">
               <PhotoReveal img="/letter/3.jpg" text="/handwritten/5.jpg" />
               <PhotoReveal img="/letter/4.jpg" text="/handwritten/2.jpg" />
             </div>
